@@ -13,7 +13,9 @@ function NavBar() {
 
   //const hambNav = useNavigation()
   return (
-          <Tab.Navigator>
+          <Tab.Navigator screenOptions={{
+            headerShown: false
+          }}>
           <Tab.Screen name="Home" component={HomeScreen} options={{
               tabBarIcon: () => (
                 <FontAwesomeIcon icon={faHouse} style={{color:'#1a7ded'}} size={25}/>

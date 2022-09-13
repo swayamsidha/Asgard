@@ -10,8 +10,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import SimSelect from './components/SimSelect';
 import NavBar from './components/Navigation/Navbar'
-import Drawer from './components/Navigation/Drawer';
 //import Drawer from './components/Navigation/Drawer';
+import Drawer from './components/Navigation/Drawer';
 import { PermissionsAndroid } from 'react-native'
 
 import { NavigationContainer as Router } from '@react-navigation/native';
@@ -49,7 +49,7 @@ const App = () => {
               }}/>
               
 
-              <Stack.Screen  name="home" component={NavBar} options={{headerShown: false}}/>
+              <Stack.Screen  name="home" component={Drawer} options={{headerShown: false}}/>
 
             </Stack.Navigator>
 
