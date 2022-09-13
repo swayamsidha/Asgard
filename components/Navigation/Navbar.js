@@ -17,12 +17,7 @@ function NavBar() {
           <Tab.Screen name="Home" component={HomeScreen} options={{
               tabBarIcon: () => (
                 <FontAwesomeIcon icon={faHouse} style={{color:'#1a7ded'}} size={25}/>
-              ),
-              headerLeft: () => (
-                <TouchableHighlight onPress={() => console.log('hambNav')}>
-                      <FontAwesomeIcon icon={faBars} style={{color:'#1a7ded'}} size={25} />
-                </TouchableHighlight>
-          )
+              )
             }}/>
           <Tab.Screen name="Complaint" component={ComplaintScreen}  options={{
             tabBarIcon:() => (

@@ -10,6 +10,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import SimSelect from './components/SimSelect';
 import NavBar from './components/Navigation/Navbar'
+import Drawer from './components/Navigation/Drawer';
 //import Drawer from './components/Navigation/Drawer';
 import { PermissionsAndroid } from 'react-native'
 
@@ -17,7 +18,6 @@ import { NavigationContainer as Router } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { LinearGradient } from 'react-native-svg';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-
 PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_PHONE_STATE)
 
 const Stack = createNativeStackNavigator();
